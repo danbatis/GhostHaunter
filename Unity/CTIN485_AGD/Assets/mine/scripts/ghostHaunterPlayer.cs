@@ -129,7 +129,7 @@ public class ghostHaunterPlayer : MonoBehaviour {
 		dashing = true;
 		dashPitchForth = true;
 		//rotate
-		//yield return new WaitForSeconds(dashMomentSpan);
+		yield return new WaitForSeconds(dashMomentSpan);
 		dashPitchForth = false;
 		dashForth = true;
 		//dash
@@ -137,7 +137,7 @@ public class ghostHaunterPlayer : MonoBehaviour {
 		dashForth = false;
 		dashPitchBack = true;
 		//rotate back
-		//yield return new WaitForSeconds(dashMomentSpan);
+		yield return new WaitForSeconds(dashMomentSpan);
 		dashPitchBack = false;
 		dashing = false;
 
